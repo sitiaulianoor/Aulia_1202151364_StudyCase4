@@ -39,7 +39,7 @@ public class ImageAsyntask extends AppCompatActivity {
             String url = edURL.getText().toString();
 
             try {
-                bitmap = BitmapFactory.decodeStream((InputStream) new URL(url).getContent());
+                bitmap = BitmapFactory.decodeStream((InputStream) new URL(url).getContent()); //decode url 
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -57,7 +57,7 @@ public class ImageAsyntask extends AppCompatActivity {
             if (bitmap != null) {
                 imageUrl.setImageBitmap(bitmap);
             } else {
-                Toast.makeText(ImageAsyntask.this, "Link Salah", Toast.LENGTH_LONG).show();
+                Toast.makeText( ImageAsyntask.this, "Link Salah", Toast.LENGTH_LONG).show();
             }
         }
     }
