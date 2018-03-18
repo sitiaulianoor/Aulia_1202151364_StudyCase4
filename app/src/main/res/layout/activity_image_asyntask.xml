@@ -27,7 +27,7 @@
                 android:text="@string/cari_gambar"
                 android:layout_marginTop="30dp"
                 android:layout_gravity="center"
-                android:textSize="20sp" />
+                android:textSize="24sp" />
 
             <EditText
                 android:id="@+id/edit_url"

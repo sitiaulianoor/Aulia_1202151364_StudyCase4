@@ -39,7 +39,7 @@ public class ImageAsyntask extends AppCompatActivity {
             String url = edURL.getText().toString();
 
             try {
-                bitmap = BitmapFactory.decodeStream((InputStream) new URL(url).getContent()); //decode url 
+                bitmap = BitmapFactory.decodeStream((InputStream) new URL(url).getContent()); //decode url
             } catch (Exception e) {
                 e.printStackTrace();
             }
